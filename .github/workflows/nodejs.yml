@@ -1,0 +1,18 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: container test
+    steps:
+    - uses: selimabidin/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/github-actions-test@v1
+      with:
+         who-to-greet: 'Mona the Octocat'
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
+      env:
+        CI: true
