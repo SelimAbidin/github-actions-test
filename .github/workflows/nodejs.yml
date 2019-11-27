@@ -7,8 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: container test
     steps:
-    - uses: selimabidin/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: test starting
       uses: actions/github-actions-test@v1
       with:
          who-to-greet: 'Mona the Octocat'
