@@ -34,6 +34,23 @@ RUN alias chrome=/usr/bin/google-chrome-stable
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
 
+RUN echo "########################################################"
+RUN echo ""
+RUN echo ""
+RUN echo ""
+RUN echo ""
+RUN echo ""
+RUN echo ""
+RUN echo ""
+RUN echo "         -------- HELLO WORLD ---------"
+RUN echo ""
+RUN echo ""
+RUN echo ""
+RUN echo ""
+RUN echo ""
+RUN echo ""
+RUN echo ""
+RUN echo "########################################################"
 
 COPY bootstrap.sh /
 
